@@ -1,6 +1,6 @@
-# weft-web
+# <img src="web/icon-180.png" width="32" alt=""> weft-web
 
-[weft](../weft) on a phone. `weft-web serve` keeps weft sessions running on the
+[weft](https://github.com/akuttruff/weft) on a phone. `weft-web serve` keeps weft sessions running on the
 Mac, each in its own pseudo-terminal, and a browser on the tailnet draws them
 with xterm.js. `weft-web` in a terminal joins the same session, so a run you
 start at the desk can be watched, typed into and approved from the phone, and
