@@ -4,7 +4,7 @@
 // for again. Sessions and the lists are never cached.
 'use strict';
 
-const CACHE = 'weft-web-v3';
+const CACHE = 'weft-web-v4';
 const SHELL = [
   '/', '/app.js', '/style.css', '/manifest.webmanifest', '/icon.svg',
   '/icon-180.png', '/icon-512.png',
