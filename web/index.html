@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>weft</title>
+  <meta name="theme-color" content="#1B1D1A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="weft">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="stylesheet" href="vendor/xterm.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="home">
+    <header class="brand"><img src="icon.svg" alt=""><h1>weft</h1></header>
+    <p id="error" class="error" hidden></p>
+    <section>
+      <h2>Sessions</h2>
+      <ul id="sessions" class="list"></ul>
+      <p id="no-sessions" class="quiet" hidden>Nothing running. Pick a folder to start, or run <code>weft</code> in a terminal on the Mac.</p>
+    </section>
+    <section>
+      <h2>Start in</h2>
+      <ul id="folders" class="list"></ul>
+    </section>
+  </main>
+
+  <div id="session" hidden>
+    <div class="bar">
+      <button id="back" class="icon" aria-label="Sessions">‹</button>
+      <span id="title" class="title"></span>
+      <span id="state" class="state"></span>
+      <button id="smaller" class="icon" aria-label="Smaller text">A−</button>
+      <button id="bigger" class="icon" aria-label="Larger text">A+</button>
+    </div>
+    <div id="term"></div>
+    <div id="keys" class="keys"></div>
+  </div>
+
+  <script src="vendor/xterm.js"></script>
+  <script src="vendor/addon-fit.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

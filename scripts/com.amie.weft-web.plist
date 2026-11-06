@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- weft-web serve under launchd. scripts/deploy-web.sh fills in @HOME@, @PATH@,
+     @OWNER@ and @TAILNET_NAME@ and installs this as
+     ~/Library/LaunchAgents/com.amie.weft-web.plist. The Tailscale app's CLI
+     does not answer a launchd job, so the login and name come from here. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.amie.weft-web</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>@HOME@/.cargo/bin/weft-web</string>
+    <string>serve</string>
+    <string>--owner</string>
+    <string>@OWNER@</string>
+    <string>--tailnet-name</string>
+    <string>@TAILNET_NAME@</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>@HOME@</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <!-- Sessions a browser starts get this PATH (a terminal's own sessions
+         bring theirs): it finds `weft`, and weft's tools find cargo, node,
+         git and the rest. -->
+    <key>PATH</key>
+    <string>@PATH@</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>@HOME@/Library/Logs/com.amie.weft-web.log</string>
+  <key>StandardErrorPath</key>
+  <string>@HOME@/Library/Logs/com.amie.weft-web.log</string>
+</dict>
+</plist>

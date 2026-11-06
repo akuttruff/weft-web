@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Full-bleed opaque ground: iOS masks to its own squircle. -->
+  <rect width="512" height="512" fill="#1B1D1A"/>
+  <!-- A loom: five warp threads, and two weft threads woven through them,
+       one over-under, the next under-over. -->
+  <g stroke="#EDE8DC" stroke-width="14" stroke-linecap="round">
+    <line x1="136" y1="96" x2="136" y2="416"/>
+    <line x1="196" y1="96" x2="196" y2="416"/>
+    <line x1="256" y1="96" x2="256" y2="416"/>
+    <line x1="316" y1="96" x2="316" y2="416"/>
+    <line x1="376" y1="96" x2="376" y2="416"/>
+  </g>
+  <!-- The gold weft: over the 1st, 3rd and 5th warp, under the 2nd and 4th. -->
+  <line x1="92" y1="216" x2="420" y2="216" stroke="#D9B86A" stroke-width="20" stroke-linecap="round"/>
+  <g stroke="#EDE8DC" stroke-width="14" stroke-linecap="butt">
+    <line x1="196" y1="200" x2="196" y2="232"/>
+    <line x1="316" y1="200" x2="316" y2="232"/>
+  </g>
+  <!-- The sage weft: under the 1st, 3rd and 5th, over the 2nd and 4th. -->
+  <line x1="92" y1="296" x2="420" y2="296" stroke="#8FA382" stroke-width="20" stroke-linecap="round"/>
+  <g stroke="#EDE8DC" stroke-width="14" stroke-linecap="butt">
+    <line x1="136" y1="280" x2="136" y2="312"/>
+    <line x1="256" y1="280" x2="256" y2="312"/>
+    <line x1="376" y1="280" x2="376" y2="312"/>
+  </g>
+</svg>
