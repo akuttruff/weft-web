@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <!-- Full-bleed opaque ground: iOS masks to its own squircle. -->
-  <rect width="512" height="512" fill="#1B1D1A"/>
+  <rect width="512" height="512" fill="#444444"/>
   <!-- A phone, and in it weft's loom: three warp threads, the gold weft
        under the middle one, the sage weft over it. -->
-  <rect x="146" y="64" width="220" height="384" rx="44" fill="none" stroke="#EDE8DC" stroke-width="16"/>
-  <line x1="230" y1="104" x2="282" y2="104" stroke="#EDE8DC" stroke-width="12" stroke-linecap="round"/>
-  <g stroke="#EDE8DC" stroke-width="12" stroke-linecap="round">
+  <rect x="146" y="64" width="220" height="384" rx="44" fill="none" stroke="#FFFFFF" stroke-width="16"/>
+  <line x1="230" y1="104" x2="282" y2="104" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <g stroke="#FFFFFF" stroke-width="12" stroke-linecap="round">
     <line x1="206" y1="156" x2="206" y2="380"/><line x1="256" y1="156" x2="256" y2="380"/><line x1="306" y1="156" x2="306" y2="380"/>
   </g>
-  <line x1="180" y1="232" x2="332" y2="232" stroke="#D9B86A" stroke-width="18" stroke-linecap="round"/>
-  <line x1="256" y1="218" x2="256" y2="246" stroke="#EDE8DC" stroke-width="12"/>
-  <line x1="180" y1="300" x2="332" y2="300" stroke="#8FA382" stroke-width="18" stroke-linecap="round"/>
-  <g stroke="#EDE8DC" stroke-width="12"><line x1="206" y1="286" x2="206" y2="314"/><line x1="306" y1="286" x2="306" y2="314"/></g>
+  <line x1="180" y1="232" x2="332" y2="232" stroke="#3D92C9" stroke-width="18" stroke-linecap="round"/>
+  <line x1="256" y1="218" x2="256" y2="246" stroke="#FFFFFF" stroke-width="12"/>
+  <line x1="180" y1="300" x2="332" y2="300" stroke="#B0CADB" stroke-width="18" stroke-linecap="round"/>
+  <g stroke="#FFFFFF" stroke-width="12"><line x1="206" y1="286" x2="206" y2="314"/><line x1="306" y1="286" x2="306" y2="314"/></g>
 </svg>
