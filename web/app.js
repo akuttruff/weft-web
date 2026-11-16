@@ -138,9 +138,9 @@ function ensureTerm() {
     allowProposedApi: false,
     macOptionIsMeta: true,
     theme: {
-      background: '#1B1D1A',
-      foreground: '#EDE8DC',
-      cursor: '#EDE8DC',
+      background: '#2B2B2B',
+      foreground: '#FFFFFF',
+      cursor: '#FFFFFF',
       selectionBackground: '#4A4F43',
     },
   });
